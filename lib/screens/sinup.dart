@@ -391,7 +391,7 @@ class _SinupState extends State<Sinup> {
 
     Navigator.pushAndRemoveUntil(
         (context),
-        MaterialPageRoute(builder: (context) => Homescreen()),
+        MaterialPageRoute(builder: (context) => Homesceen()),
             (route) => false);
   }
 }

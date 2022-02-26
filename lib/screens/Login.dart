@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:login/screens/Minh.dart';
 import 'package:login/screens/home.dart';
 import 'package:login/screens/sinup.dart';
 class LoginScreen extends StatefulWidget {
@@ -150,7 +149,7 @@ class _LoginScreenState extends State<LoginScreen> {
       {
         Fluttertoast.showToast(msg: "login successful"),
         Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => Homescreen())),
+            MaterialPageRoute(builder: (context) => Homesceen())),
       }).catchError((e) {
         Fluttertoast.showToast(msg: e!.message);
       });
